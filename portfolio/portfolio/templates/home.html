@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,8 +9,94 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/4783c29945.js" crossorigin="anonymous"></script>
     <title>Nick van Oers</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}"/>
   </head>
   <body>
-    {% block content %}{% endblock %}
+    {% include 'navbar.html' %}
+    <section id="hero">
+        <div class="row">
+            <div class="col-lg-6 herocol hcolimg">
+                <img src="{% static 'img/herobg.jpg' %}" class="hero" alt="">
+                <div class="header-social-links">
+                    <a href="#" class="github"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 herocol">
+                <h1 style="font-family: Open sans;">Nick van Oers</h1>
+                <h3 style="font-family: Open sans;">Student, Web developer</h3>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="row title">
+            <h1>ABOUT ME</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-8 text">
+                <p>
+                    Hello, I'm Nick. I am currently a bachelor student at the Radboud University of Nijmegen. I'm studying Computing Science with a specialization in software and data science.
+                    Besides that I work as a teaching assistant for various university courses, and as a freelance web developer. In my free time I enjoy hanging out with friends, dancing and listening to music.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="career" class="resume">
+        <div class="row title">
+            <h1>CAREER</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="resume-item">
+                  <h4>Freelance Web developer</h4>
+                  <h5>May 2022</h5>
+                  <p><em>Nick van Oers</em></p>
+                  <p></p>
+                </div>
+                <div class="resume-item">
+                  <h4>Junior Software Developer</h4>
+                  <h5>March 2022</h5>
+                  <p><em>Thimeo Audio Technology</em></p>
+                  <p>Improving existing software and extending functionality of it.</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Logistics & IT manager</h4>
+                    <h5>October 2020 - September 2021</h5>
+                    <p><em>BBB Career Event Foundation</em></p>
+                    <p>Head of organisation of the BBB Career Event and maintaining the foundation's IT infrastructure.</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Treasurer</h4>
+                    <h5>September 2019 - August 2020</h5>
+                    <p><em>Study Association Thalia</em></p>
+                    <p>Maintaining the bookkeeping as a board member of Study Association Thalia.</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Student Assistant</h4>
+                    <h5>September 2018</h5>
+                    <p><em>Radboud University</em></p>
+                    <p>Giving lectures and practicals and grading homework for several courses. Also contributing to innovating courses.</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Committee work</h4>
+                    <h5>October 2017</h5>
+                    <p><em>Study Association Thalia</em></p>
+                    <p>Taken part in various committees, mostly organising events and study trips. Taking part in and organising the university's orientation period, guiding new students. Taking a seat in advisory organs of the association.</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Bachelor Computing Science</h4>
+                    <h5>September 2017</h5>
+                    <p><em>Radboud University</em></p>
+                    <p>Obtaining a Bachelor's degree in Computing Science with a specialization in Software and Data Science.</p>
+                </div>
+            </div>
+        </div>
+    </section>
   </body>
 </html>

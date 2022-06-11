@@ -1,0 +1,199 @@
+body {
+    background-color: #081428;
+    color: #F4F4F4;
+}
+
+.row {
+    margin: 0;
+    justify-content: center;
+}
+
+#header {
+    background: #16253d;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    padding: 0;
+    background-color: #16253d;
+    text-align: center;
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+    align-items: center;
+}
+.navbar li {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+.navbar a{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #F4F4F4;
+    white-space: nowrap;
+    transition: 0.3s;
+    position: relative;
+}
+.navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+}
+
+.header-social-links a {
+    color: #F4F4F4;
+    padding: 10px 3px 0px 3px;
+    display: inline-block;
+    line-height: 0px;
+    transition: 0.3s;
+    font-size: 30px;
+}
+a:hover {
+    text-decoration: none;
+    color: #34b7a7;
+}
+
+.navbar a:focus  {
+    text-decoration: none;
+    color: #34b7a7;
+}
+
+.hero {
+    border: #F4F4F4;
+    border-radius: 100%;
+    border-width: 0.5em;
+    border-style: solid;
+    width: 40vh;
+}
+
+.herocol{
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .herocol {
+        height: 35vh;
+    }
+
+    .hero {
+        width: 50vw;
+    }
+
+    .hcolimg {
+        padding-top: 20vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .herocol {
+        height: 40vh;
+    }
+
+    .hero {
+        width: 40vw;
+    }
+
+    .hcolimg {
+        padding-top: 20vh;
+    }
+}
+
+#about {
+    background-color: #F4F4F4;
+    color: #081428;
+}
+
+#about .title {
+    padding: 50px 20px 30px 20px;
+}
+
+#about .row {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+#about .text{
+    padding: 20px 20px 50px 20px;
+    display: grid;
+    justify-content: center;
+}
+
+#career {
+    background-color: #F4F4F4;
+    color: #081428;
+}
+
+#career .title {
+    padding: 50px 20px 30px 20px;
+}
+
+#career .row {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+  }
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+  }
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+  }
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;
+  }
