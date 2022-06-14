@@ -33,7 +33,7 @@ body {
     align-items: center;
 }
 .navbar {
-    padding: 0;
+    padding: 10px;
     background-color: #268a76;
     text-align: center;
     margin-bottom: 20px;
