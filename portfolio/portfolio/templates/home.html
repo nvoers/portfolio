@@ -19,10 +19,10 @@
             <div class="col-lg-6 herocol hcolimg">
                 <img src="{% static 'img/herobg.jpg' %}" class="hero" alt="">
                 <div class="header-social-links">
-                    <a href="#" class="github"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://github.com/nvoers" class="github"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/nick.vanoers.3/" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/nick.1801/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/nickvanoers/" class="linkedin"><i class="fa-brands fa-linkedin"></i></i></a>
                 </div>
             </div>
             <div class="col-lg-6 herocol">
@@ -33,7 +33,7 @@
         </div>
     </section>
 
-    <section id="about" style="padding-top: vh;">
+    <section id="about" class="maincolor" style="padding-top: vh;">
         <div class="row title">
             <h1>ABOUT ME</h1>
         </div>
@@ -50,23 +50,45 @@
 
     {% include 'career.html' %}
 
-    <section id="projects">
-        <div class="row title">
+    <section id="projects" class="maincolor">
+        <div class="row title maincolor">
             <h1>PROJECTS</h1>
         </div>
-        <div class="row projectrow" style="padding-top: 20px;">
+        <div class="row maincolor" style="padding-top: 20px;">
             <div class="col-md-4">
                 <img src="{% static 'img/thalialogo.png' %}" class="projecticon" alt="">
                 <p class="projecttitle">Concrexit</p>
-                <p class="projectdesc">Study Association Thalia's website</p>
+                <p class="projectdesc text">Study Association Thalia's website</p>
             </div>
             <div class="col-md-4">
                 <img src="{% static 'img/RUgmw.jpeg' %}" class="projecticon" alt="">
                 <p class="projecttitle">Green meeting walks</p>
-                <p class="projectdesc">App by RadboudUMC for walks past green initiatives</p>
+                <p class="projectdesc text">App by RadboudUMC for walks past green initiatives</p>
             </div>
         </div>
     </section>
+
+    <section id="contact" class="maincolor">
+        <div class="row title">
+            <h1>CONTACT</h1>
+        </div>
+        <div class="row text" style="padding-top: 20px; padding-bottom: 50px;">
+            <p>You can contact me at <a class="email maincolor" href="mailto:insert@email.com">insert@email.com</a></p>
+        </div>
+    </section>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#hero" class="nav-link px-2">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link px-2">About</a></li>
+            <li class="nav-item"><a href="#career" class="nav-link px-2">Career</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link px-2">Projects</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link px-2">Contact</a></li>
+          </ul>
+          <p class="text-center">&copy; 2022 Nick van Oers</p>
+        </footer>
+      </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </html>

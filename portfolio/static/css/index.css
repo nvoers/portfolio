@@ -3,8 +3,21 @@ html {
     -webkit-overflow-scrolling: touch;
 }
 
+.maincolor {
+    color: #0a6a56;
+    background-color: #F4F4F4;
+}
+
+.text {
+    color: black;
+}
+
+.contrastcolor{
+    color: #081428;
+}
+
 body {
-    background-color: #081428;
+    background-color: #0a6a56;
     color: #F4F4F4;
 }
 
@@ -14,19 +27,19 @@ body {
 }
 
 #header {
-    background: #16253d;
+    background: #268a76;
     padding: 15px 0;
     justify-content: center;
     align-items: center;
 }
 .navbar {
     padding: 0;
-    background-color: #16253d;
+    background-color: #268a76;
     text-align: center;
     margin-bottom: 20px;
 }
 .off-canvas {
-    background-color: #16253d;
+    background-color: #268a76;
 }
 
 .nav-link {
@@ -35,16 +48,20 @@ body {
 }
 
 .nav-link:hover{
-    color: #34b7a7;
+    color: #081428;
 }
 
 .nav-link:focus{
     text-decoration: none;
-    color: #34b7a7;
+    color: #081428;
+}
+
+.nav-item {
+    color: white;
 }
 
 .active {
-    color: #34b7a7;
+    color: #081428;
     text-decoration: none;
 }
 
@@ -58,12 +75,12 @@ body {
 }
 a:hover {
     text-decoration: none;
-    color: #34b7a7;
+    color: #081428;
 }
 
 .navbar a:focus  {
     text-decoration: none;
-    color: #34b7a7;
+    color: #081428;
 }
 
 
@@ -111,10 +128,10 @@ a:hover {
     }
 }
 
-#about {
+/* #about {
     background-color: #F4F4F4;
     color: #081428;
-}
+} */
 
 #about .title {
     padding: 50px 20px 30px 20px;
@@ -132,10 +149,10 @@ a:hover {
     justify-content: center;
 }
 
-#career {
+/* #career {
     background-color: #F4F4F4;
     color: #081428;
-}
+} */
 
 #career .title {
     padding: 50px 20px 30px 20px;
@@ -236,12 +253,32 @@ a:hover {
 }
 
 .projecttitle {
-    color: #081428;
+    color: #0a6a56;
     font-weight: bold;
     padding-top: 10px;
     margin: 10px;
 }
 
-.projectrow {
+/* .projectrow {
     color: #081428;
+} */
+
+/* #contact {
+    background-color: #F4F4F4;
+    color: #081428;
+} */
+
+#contact .title {
+    padding: 50px 20px 30px 20px;
+    display: grid;
+}
+
+#contact .row {
+    justify-items: center;
+    text-align: center;
+}
+
+.email {
+    text-decoration: none;
+    /* color: #081428; */
 }
